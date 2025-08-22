@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34009958048",
+    "project_id": "factol-2c765",
+    "storage_bucket": "factol-2c765.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34009958048:android:046680d148390c1dccabc5",
+        "android_client_info": {
+          "package_name": "com.example.factolapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXDv03HhnbojLLtNvf-MPmthZdhozSDFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
