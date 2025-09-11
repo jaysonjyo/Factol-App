@@ -29,7 +29,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    TextField(
+                    TextField(style: TextStyle(decorationThickness:0),
                       controller: nameController,
                       decoration: const InputDecoration(
                         labelText: "Name",
@@ -91,6 +91,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
                     Navigator.pop(ctx, {
                       'name': nameController.text.trim(),
                       'steps': <String>[],
+                      'iconCodePoint': selectedIcon!.codePoint,
                      // save icon code
                     });
                   },
@@ -161,6 +162,7 @@ print("newRoute = $newRoute");
               final routeData = routes[index].data() as Map<String, dynamic>;
               final name = routeData['name'] ?? "Unnamed";
               final steps = (routeData['steps'] as List<dynamic>? ?? []).cast<String>();
+              final iconCodePoint = routeData['iconCodePoint'] ?? Icons.checkroom.codePoint;
               print("steps $steps");
               print("name $name");
               return Container(
@@ -171,7 +173,7 @@ print("newRoute = $newRoute");
                 child: ListTile(
                   leading: CircleAvatar(
                     backgroundColor: Colors.blue.shade100,
-                    child: const Icon(Icons.checkroom, color: Colors.black),
+                    child:  Icon( IconData(iconCodePoint, fontFamily: 'MaterialIcons'), color: Colors.black),
                   ),
                   title: Text(
                     name,

@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'Home just screen.dart';
 import 'Material Page/Material home screen.dart';
 import 'Product/Prdouct create.dart';
 import 'Route Pages/Route.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme:
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         seedColor: Colors.deepPurple
         ),
       ),
-      home:CreateProductPage(),
+      home:MainHome(),
     );
   }
 }
