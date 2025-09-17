@@ -36,13 +36,6 @@ class _RoutesScreenState extends State<RoutesScreen> {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    // TextField(
-                    //   controller: stepsController,
-                    //   keyboardType: TextInputType.number,
-                    //   decoration: const InputDecoration(
-                    //     labelText: "Steps",
-                    //   ),
-                    // ),
                     const SizedBox(height: 20),
                     const Text("Choose an Icon:"),
                     Wrap(
@@ -74,6 +67,7 @@ class _RoutesScreenState extends State<RoutesScreen> {
                 ),
               ),
               actions: [
+
                 TextButton(
                   onPressed: () => Navigator.pop(ctx),
                   child: const Text("Cancel"),

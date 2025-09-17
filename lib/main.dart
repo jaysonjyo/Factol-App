@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'Home just screen.dart';
 import 'Material Page/Material home screen.dart';
+import 'Order entry/Order Main.dart';
 import 'Product/Prdouct create.dart';
 import 'Route Pages/Route.dart';
 import 'firebase_options.dart';
@@ -574,11 +575,6 @@ class _FlowAddingScreenState extends State<FlowAddingScreen> {
     );
   }
 }
-
-
-
-
-
 
 class FactoryAddingScreen extends StatelessWidget {
   const FactoryAddingScreen({super.key});

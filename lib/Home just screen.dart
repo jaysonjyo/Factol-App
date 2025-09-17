@@ -1,3 +1,4 @@
+import 'package:factolapp/Order%20entry/Order%20Main.dart';
 import 'package:flutter/material.dart';
 
 import 'Material Page/Material home screen.dart';
@@ -25,23 +26,36 @@ class _MainHomeState extends State<MainHome> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+
+            Spacer(),
             ElevatedButton(
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>RoutesScreen()));
               },
               child: Text('RoutesScreen'),
             ),
+            Spacer(),
             ElevatedButton(
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>CreateProductPage()));
               },
               child: Text('CreateProductPage'),
-            ), ElevatedButton(
+            ),
+            Spacer(),
+            ElevatedButton(
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>MaterialsScreen()));
               },
               child: Text('MaterialsScreen'),
             ),
+            Spacer(),
+            ElevatedButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>OrderMain()));
+              },
+              child: Text('Order Entry'),
+            ),
+            Spacer(),
           ],
         ),
       ),
